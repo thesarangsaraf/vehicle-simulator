@@ -1,24 +1,20 @@
 package simulator.vehicle.car;
 
+import lombok.Data;
 import simulator.vehicle.driver.Driver;
 
+@Data
 public abstract class Car {
-	
+
 	// the values which varies based on conditions
-	public Integer currentCarSpeed;
-	public Integer currentCarRpm;
-	public Integer currentFuelLevel;
-	public Boolean areHeadlightsOn;
-	public Boolean isCarOn;
-	public Driver carDriver;
+	private Integer currentCarSpeed;
+	private Integer currentCarRpm;
+	private Integer currentFuelLevel;
+	private Boolean areHeadlightsOn;
+	private Boolean isCarOn;
+	private Driver carDriver;
 
-	public VehicleCharacteristic characteristics;
-
-	@Override
-	public String toString() {
-		return "Car [currentCarSpeed=" + currentCarSpeed + ", currentCarRpm=" + currentCarRpm + ", currentFuelLevel="
-				+ currentFuelLevel + ", areHeadlightsOn=" + areHeadlightsOn + ", isCarOn=" + isCarOn + ", carDriver="
-				+ carDriver + ", characteristics=" + characteristics + "]";
-	}
+	// these values are constant and assigned when new vehicle is created
+	private VehicleCharacteristic characteristics;
 
 }

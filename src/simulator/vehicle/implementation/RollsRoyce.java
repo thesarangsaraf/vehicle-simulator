@@ -10,15 +10,15 @@ public class RollsRoyce extends Car {
 	public RollsRoyce(Driver driver) {
 
 		VehicleCharacteristic rollsRoyceCharacteristics = new VehicleCharacteristic();
-		rollsRoyceCharacteristics.cc = 3000;
-		rollsRoyceCharacteristics.hasSeatBelt = true;
-		rollsRoyceCharacteristics.headLights = "led";
-		rollsRoyceCharacteristics.model = "RollsRoyal";
-		rollsRoyceCharacteristics.seatCapacity = 5;
-		rollsRoyceCharacteristics.wheelSize = 20;
+		rollsRoyceCharacteristics.setCc(3000);
+		rollsRoyceCharacteristics.setHasSeatBelt(true);
+		rollsRoyceCharacteristics.setHeadLights("LED");
+		rollsRoyceCharacteristics.setModel("ROLLS_ROYCE");
+		rollsRoyceCharacteristics.setSeatCapacity(5);
+		rollsRoyceCharacteristics.setWheelSize(20);
 
-		super.characteristics = rollsRoyceCharacteristics;
-		super.carDriver = driver;
+		super.setCharacteristics(rollsRoyceCharacteristics);
+		super.setCarDriver(driver);
 	}
 
 }

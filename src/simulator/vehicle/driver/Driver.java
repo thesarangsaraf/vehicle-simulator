@@ -1,10 +1,13 @@
 package simulator.vehicle.driver;
 
+import lombok.Data;
+
+@Data
 public abstract class Driver {
 
-	public String firstName;
-	public String lastName;
-	public String email;
-	public String profile;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String profile;
 
 }
